@@ -4,6 +4,7 @@ import { resolve } from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/steel-union/',
   plugins: [vue()],
   resolve: {
     alias: {
