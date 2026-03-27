@@ -1,0 +1,1 @@
+import{R as e,n as t}from"./pinia-CrYWIc2_.js";var n=t(`toast`,()=>{let t=e([]),n=1;function r(e,r=`info`){let a=n++;t.value.push({id:a,message:e,type:r}),setTimeout(()=>i(a),3e3)}function i(e){let n=t.value.findIndex(t=>t.id===e);n!==-1&&t.value.splice(n,1)}return{toasts:t,showToast:r,removeToast:i}});export{n as t};
