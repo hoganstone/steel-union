@@ -121,7 +121,8 @@ function subscribe() {
       <!-- Divider -->
       <div class="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p class="text-gray-400 text-sm">
-          © 2024 鐵鋼工會. 保留所有權利.
+          © 2024 鐵鋼工會. 保留所有權利. |
+          <RouterLink to="/admin/login" class="hover:text-[#8b6d4b] transition-colors ml-1">後台管理</RouterLink>
         </p>
 
         <!-- Social Icons -->

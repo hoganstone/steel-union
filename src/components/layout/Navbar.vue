@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { RouterLink, useRouter } from 'vue-router'
-import { HardHat, ShoppingCart, Menu, X, Search } from 'lucide-vue-next'
+import { HardHat, ShoppingCart, Menu, X, Search, Settings } from 'lucide-vue-next'
 import { useCartStore } from '@/stores/cart.js'
 
 const cartStore = useCartStore()
@@ -58,6 +58,13 @@ function toggleMobile() {
             >
               {{ cartCount }}
             </span>
+          </RouterLink>
+          <RouterLink
+            to="/admin/login"
+            class="text-[#2c3e50] hover:text-[#8b6d4b] transition-colors"
+            title="後台管理"
+          >
+            <Settings class="w-5 h-5" />
           </RouterLink>
         </div>
 
